@@ -14,4 +14,15 @@ function splitToRows(userArray) {
     // remove this rowArray from userArray
     userArray.splice(0, 4)
   }
+  return metaArray
+}
+
+function splitToCols(userArray) {
+  var metaArray = splitToRows(userArray)
+  // for each array in metaArray, we want to get the first element, and push that to transformedArray
+  metaArray.forEach(function(array) {
+    char = array[0]
+    var transformedArray = []
+    transformedArray.push(char)
+  })
 }

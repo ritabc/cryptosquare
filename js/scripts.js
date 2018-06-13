@@ -20,11 +20,12 @@ function transform(userArray) {
       char = array[i]
       newRow.push(char)
     })
-  return newRow
+    var outputStr = newRow.join("")
+  return outputStr
 }
 
 $(document).ready(function(){
-  var userInput = "Hello Everyone welcome to the eartha"
+  var userInput = "Hello Everyone"
   var userArray = userInput.toLowerCase().replace(/\s/g, '').split("")
   var transformedArray = transform(userArray)
   console.log(transformedArray)

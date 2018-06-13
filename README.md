@@ -23,7 +23,7 @@
   * Input: [h,e,l,l,o,e,v,e,r,y,o,n,e]
   * Output: 4
 
-* This program will split the array at ever column.length place into new equally long arrays(splitToRows)
+* This program will split the array at ever column.length place into new equally long arrays (splitToRows)
   * Input: [h,e,l,l,o,e,v,e,r,y,o,n,e]
   * Output:
           1. [h,e,l,l]
@@ -31,7 +31,7 @@
           1. [r,y,o,n]
           1. [e]
 
-* This program will take every index[y] for columns and place in sub-array(3)
+* This program will take every index[y] for columns and place in sub-array (transform)
   * Input:
           1. [h,e,l,l]
           1. [o,e,v,e]

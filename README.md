@@ -23,7 +23,7 @@
   * Input: [h,e,l,l,o,e,v,e,r,y,o,n,e]
   * Output: 4
 
-* This program will split the array at ever column.length place into new equally long arrays(2)
+* This program will split the array at ever column.length place into new equally long arrays(splitToRows)
   * Input: [h,e,l,l,o,e,v,e,r,y,o,n,e]
   * Output:
           1. [h,e,l,l]

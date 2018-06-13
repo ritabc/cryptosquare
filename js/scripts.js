@@ -1,6 +1,3 @@
-var userInput = "Hello Everyone"
-var userArray = userInput.toLowerCase().replace(/\s/g, '').split("")
-
 function findColumnLength(userArray) {
   return Math.ceil(Math.sqrt(userArray.length))
 }
@@ -8,16 +5,12 @@ function findColumnLength(userArray) {
 function splitToRows(userArray) {
   var numberOfCols = findColumnLength(userArray)
   var metaArray = []
-  for (i = 0 ; i <= numberOfCols - 1; ++i) {
-    var rowArray = userArray.slice(0, numberOfCols)
+  for (var i = 0 ; i < userArray.length; i += numberOfCols) {
+    var rowArray = userArray.slice(i, i + numberOfCols)
     metaArray.push(rowArray)
-    // remove this rowArray from userArray
-    userArray.splice(0, 4)
-  }
-  return metaArray
+  } return metaArray
 }
-
-function splitToCols(userArray) {
+function transform(userArray) {
   var metaArray = splitToRows(userArray)
   // for each array in metaArray, we want to get the first element, and push that to transformedArray
   metaArray.forEach(function(array) {
@@ -26,3 +19,10 @@ function splitToCols(userArray) {
     transformedArray.push(char)
   })
 }
+
+$(document).ready(function(){
+  var userInput = "Hello Everyone"
+  var userArray = userInput.toLowerCase().replace(/\s/g, '').split("")
+  var rows = splitToRows(userArray)
+  console.log(rows)
+})
